@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ca-central-1" //Canada
+}
+
 resource "aws_instance" "web" {
   ami           = "ami-01e36b7901e884a10"
   instance_type = "t3.micro"
