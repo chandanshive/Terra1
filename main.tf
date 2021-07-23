@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "web"
   }
 }
 
@@ -11,6 +11,6 @@ resource "aws_s3_bucket" "bucket" {
   bucket = "my-tf-test-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "bucket"
   }
 }
